@@ -47,6 +47,33 @@ main {
 	
 }
 
+.lore {
+	color: #dcdc3a;
+	max-width: 900px;
+	margin: auto;
+	text-shadow: 10px 5px 15px #13265d;
+	-webkit-transition: 4s; /* Safari prior 6.1 */
+  transition: 2s;
+  animation: pulse 2s infinite;
+  padding: 1em;
+  background-color: #845ac7;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 3px 3px 13px 13px rgba(204,169,44, 0.4);
+  }
+  70% {
+      box-shadow: 13px 3px 3px 30px rgba(204,169,44, 0);
+  }
+  100% {
+      box-shadow: 3px 13px 3px 13px rgba(204,169,44, 0);
+  }
+}
+
+
 button {
   cursor: wait;
 }
